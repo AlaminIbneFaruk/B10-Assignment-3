@@ -42,17 +42,17 @@
       };
     </script>
   </head>
-  <body class="text-manRope bg-base-200">
+  <body class="text-manRope bg-base-100 m-0 p-0">
     <!-- container -->
     <main>
-      <!-- mobile navbar -->
-      <header class="w-10/12 mx-auto">
+      <header class="w-full sm:w-11/12 md:w-10/12 lg:w-8/12 mx-auto">
+        <!-- navbar start -->
         <nav>
           <div class="navbar items-center">
             <div class="navbar-start">
               <!-- logo -->
               <div class="flex justify-center items-center ">
-                <a class="btn btn-circle bg-buttonP -p-5 mx-2">
+                <a class="btn btn-circle bg-buttonP -p-5 hover:bg-buttonS">
                   <i class="fa-solid fa-arrow-right text-lg lg:text-xl -rotate-45"></i>
                 </a>
                 <p class="text-2xl lg:text-3xl font-extrabold">
@@ -70,25 +70,25 @@
                 <li><a>Contact Us</a></li>
               </ul>
             </div>
+            <!--navbar end-->
             <div class="navbar-end">
-  
-                <button class="btn btn-circle hidden sm:block mx-1 bg-white border">
-                  <i class="fa-solid fa-magnifying-glass"></i>
-                </button>
-                <button class="btn btn-circle hidden sm:block mx-1 bg-white border">
-                  <i class="fa-solid fa-shopping-cart"></i>
-                </button>
-                <button class="btn rounded-full bg-buttonP px-4 mx-2 text-[0.9rem] font-bold hidden sm:block">
-                    Book Consult
+              
+              <button class="btn btn-circle hidden sm:block mx-1 bg-white border">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+              <button class="btn btn-circle hidden sm:block mx-1 bg-white border">
+                <i class="fa-solid fa-shopping-cart"></i>
+              </button>
+              <button class="btn rounded-full bg-buttonP px-4 mx-2 text-[0.9rem] font-bold hidden sm:block">
+                Book Consult
                     <i class="fa-solid fa-arrow-right rounded-full -rotate-45 bg-black text-white  aspect-square w-auto h-auto p-1.5"></i>
-              </button>            
+              </button>   
+            <!--Dropdown for mobile  -->
               <div class="dropdown">
                 <div tabindex="0" role="button" class="btn lg:hidden btn-circle bg-white border">
                   <i class="fa-solid fa-bars text-xl"></i>
                 </div>
-                <ul
-                  tabindex="0"
-                  class="menu dropdown-content bg-base-100 rounded-box z-[1] mt-3 md:py-2 shadow -mr-20">
+                <ul tabindex="0" class="menu dropdown-content bg-base-100 rounded-box z-[1] mt-3 md:py-2 -ml-10">
                   <li><a>Home</a></li>
                   <li><a>Services</a></li>
                   <li><a>Potifolio</a></li>
@@ -101,9 +101,8 @@
           </div>
         </nav>
       </header>
-       <!-- navbar start -->
       <section>
-        <div class="hero bg-base-200 min-h-screen ">
+        <div class="hero bg-base-100 min-h-screen ">
           <div class="hero-content text-center">
             <div class="">
               <div>
@@ -117,7 +116,7 @@
                   The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
                 </p>
               </div>
-              <button class="btn bg-buttonS btn-block sm:btn-auto sm:w-auto sm:btn-lg md:btn-md rounded-full">
+              <button class="btn bg-buttonS btn-block sm:btn-auto sm:w-auto sm:btn-lg rounded-full border-none">
                 View Details
                 <i class="fa-solid fa-arrow-right rounded-full -rotate-45 bg-buttonP text-black  aspect-square w-auto h-auto p-1.5"></i>
               </button>
@@ -125,6 +124,57 @@
           </div>
         </div>
       </section>
+      <section class="mx-auto">
+        <div class="hero bg-base-200 min-h-screen pt-40 mx-2">
+          <div class="hero-content flex-col lg:flex-row w-full sm:w-11/12 md:w-10/12 lg:w-8/12 justify-evenly">
+
+            <div class="lg:w-5/12 relative">
+              <div class="absolute -top-10 -left-12">
+                <img src="./assets/Vector.png" alt="" class=" hidden md:w-auto md:visible">
+              </div>
+              <div>
+                <button class="btn rounded-full bg-white my-5 block sm:inline-block">
+                  <i class="fa-solid fa-arrow-right rounded-full text-black p-1"></i>
+                  About Us
+                </button>
+              </div>
+              <h2 class="text-5xl font-bold">
+                We design thoughtful, liveable spaces
+              </h2>
+              <p class="py-2">
+                The barn house captivates with its blend of rustic charm and <br>
+                modern sophistication, featuring weathered wood, sleek metal accents.
+              </p>
+              <div class="flex flex-col lg:flex-col md:flex-row gap-5">
+                              <!-- card1 -->
+              <div class="card flex flex-row justify-evenly items-center bg-base-100 w-auto shadow md:mr-8 ">
+                <div class="max-w-24">
+                  <img src="./assets/commercial.png" alt="" class="ml-5 ">
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title">Commercial</h3>
+                  <p>The barn house captivates with its blend of rustic charm and modern.</p>
+                </div>
+              </div>
+              <!-- card2 -->
+              <div class="card flex flex-row justify-evenly items-center bg-base-100 w-auto shadow lg:mr-8">
+                <div class="">
+                  <img src="./assets/residential.png" alt="" class="ml-5">
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title">Residential</h3>
+                  <p>The barn house captivates with its blend of rustic charm and modern.</p>
+                </div>
+              </div>
+              </div>
+            </div>
+            <div class="w-4/12">
+              <img src="./assets/Rectangle.png" class="w-full h-auto max-w-full rounded-lg shadow-2xl" />
+            </div>
+          </div>
+        </div>
+      </section>
+      
     </main>
   </body>
 </html>
