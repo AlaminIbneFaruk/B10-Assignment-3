@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -42,50 +42,27 @@
       };
     </script>
   </head>
-  <body class="text-manRope">
+  <body class="text-manRope bg-base-200">
     <!-- container -->
-    <main class="container mx-auto">
+    <main>
       <!-- mobile navbar -->
-      <header class="bg-secondary">
-        <div class="navbar items-center">
-          <div class="navbar-start">
-            <!-- logo -->
-            <div class="flex justify-center items-center ">
-              <a class="btn btn-circle bg-buttonP -p-5 mx-2">
-                <i class="fa-solid fa-arrow-right text-lg lg:text-xl -rotate-45"></i>
-              </a>
-              <p class="text-2xl lg:text-3xl font-extrabold">Rinterio</p>
-            </div>
-          </div>
-          <!-- navbar-center -->
-          <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal px-1 text-base">
-              <li><a>Home</a></li>
-              <li><a>Services</a></li>
-              <li><a>Potifolio</a></li>
-              <li><a>Blogs</a></li>
-              <li><a>Contact Us</a></li>
-            </ul>
-          </div>
-          <div class="navbar-end">
-
-              <button class="btn btn-circle btn-outline hidden sm:block">
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </button>
-              <button class="btn btn-circle btn-outline hidden sm:block">
-                <i class="fa-solid fa-shopping-cart"></i>
-              </button>
-              <button class="btn rounded-full bg-buttonP p-1 mx-2 text-[0.9rem] font-bold hidden sm:block">
-                  Book Consult
-                  <i class="fa-solid fa-arrow-right rounded-full -rotate-45 bg-black text-white  aspect-square w-auto h-auto p-1.5"></i>
-            </button>            
-            <div class="dropdown">
-              <div tabindex="0" role="button" class="btn lg:hidden btn-circle">
-                <i class="fa-solid fa-bars text-xl"></i>
+      <header class="w-10/12 mx-auto">
+        <nav>
+          <div class="navbar items-center">
+            <div class="navbar-start">
+              <!-- logo -->
+              <div class="flex justify-center items-center ">
+                <a class="btn btn-circle bg-buttonP -p-5 mx-2">
+                  <i class="fa-solid fa-arrow-right text-lg lg:text-xl -rotate-45"></i>
+                </a>
+                <p class="text-2xl lg:text-3xl font-extrabold">
+                  Rinterio
+                </p>
               </div>
-              <ul
-                tabindex="0"
-                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 p-2 shadow">
+            </div>
+            <!-- navbar-center -->
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1 text-base">
                 <li><a>Home</a></li>
                 <li><a>Services</a></li>
                 <li><a>Potifolio</a></li>
@@ -93,12 +70,61 @@
                 <li><a>Contact Us</a></li>
               </ul>
             </div>
+            <div class="navbar-end">
   
+                <button class="btn btn-circle btn-outline hidden sm:block mx-1">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <button class="btn btn-circle btn-outline hidden sm:block mx-1">
+                  <i class="fa-solid fa-shopping-cart"></i>
+                </button>
+                <button class="btn rounded-full bg-buttonP px-4 mx-2 text-[0.9rem] font-bold hidden sm:block">
+                    Book Consult
+                    <i class="fa-solid fa-arrow-right rounded-full -rotate-45 bg-black text-white  aspect-square w-auto h-auto p-1.5"></i>
+              </button>            
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn lg:hidden btn-circle">
+                  <i class="fa-solid fa-bars text-xl"></i>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu dropdown-content bg-base-100 rounded-box z-[1] mt-3 md:py-2 shadow -mr-20">
+                  <li><a>Home</a></li>
+                  <li><a>Services</a></li>
+                  <li><a>Potifolio</a></li>
+                  <li><a>Blogs</a></li>
+                  <li><a>Contact Us</a></li>
+                </ul>
+              </div>
+    
+            </div>
           </div>
-        </div>
+        </nav>
       </header>
        <!-- navbar start -->
- 
+      <section>
+        <div class="hero bg-base-200 min-h-screen ">
+          <div class="hero-content text-center">
+            <div class="">
+              <div>
+                <img class="w-full h-auto max-w-full" src="./assets/banner.png" alt="">
+              </div>
+              <div>
+                <h1 class="mx-auto text-3xl md:text-5xl font-extrabold md:max-w-4xl">
+                  A barn house of this design has a striking appearance
+                </h1>
+                <p class="py-6 lg:max-w-3xl md:max-w-xl mx-auto">
+                  The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
+                </p>
+              </div>
+              <button class="btn bg-buttonS btn-block sm:btn-auto sm:w-auto sm:btn-lg md:btn-md rounded-full">
+                View Details
+                <i class="fa-solid fa-arrow-right rounded-full -rotate-45 bg-buttonP text-black  aspect-square w-auto h-auto p-1.5"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>
