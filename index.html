@@ -28,7 +28,11 @@
               secondary: 'rgba(255,255,255,50%)',
               buttonP: 'rgb(171,239,93)',
               buttonS: 'rgba(171,239,93,50%)',
-              primaryBlack:'rgb(24,24,24)'
+              primaryBlack:'rgb(24,24,24)',
+              card1: 'rgb(230, 193, 211)',
+              card2: 'rgb(240, 218, 110)',
+              card3: 'rgb(160, 218, 190)',
+              card4: 'rgb(120, 170, 230)',
             },
             fontFamily: {
               manRope: ['Manrope', 'sans-serif'],
@@ -45,7 +49,7 @@
   <body class="text-manRope bg-base-100 m-0 p-0">
     <!-- container -->
     <main>
-      <header class="w-5/6 mx-auto">
+      <header class="w-5/6 mx-auto ">
         <!-- navbar start -->
         <nav>
           <div class="navbar items-center">
@@ -101,7 +105,8 @@
           </div>
         </nav>
       </header>
-      <section>
+      <!-- hero-banner -->
+      <section class="">
         <!-- hero banner -->
         <div class="hero bg-base-100 min-h-screen ">
           <div class="hero-content text-center">
@@ -125,10 +130,11 @@
           </div>
         </div>
       </section>
+      <!-- section1 -->
       <section class="mx-auto">
-        <div class="hero bg-base-200 min-h-screen pt-40 mx-2">
-          <div class="hero-content flex-col lg:flex-row lg:w-10/12 justify-between">
-            <div class="lg:w-5/12 relative">
+        <div class="hero bg-base-200 min-h-screen pt-40">
+          <div class="hero-content flex-col lg:flex-row lg:w-auto justify-between">
+            <div class="lg:w-[41.66%] relative m-12">
               <div class="absolute -top-10 -left-12">
                 <img src="./assets/Vector.png" alt="" class=" hidden lg:inline-block md:w-auto">
               </div>
@@ -149,7 +155,7 @@
                               <!-- card1 -->
               <div class="card flex flex-row justify-evenly items-center bg-base-100 w-auto shadow md:mr-8 ">
                 <div class="max-w-24">
-                  <img src="./assets/commercial.png" alt="" class=" ">
+                  <img src="./assets/commercial.png" alt="" class="ml-4">
                 </div>
                 <div class="card-body">
                   <h3 class="card-title">Commercial</h3>
@@ -159,7 +165,7 @@
               <!-- card2 -->
               <div class="card flex flex-row justify-evenly items-center bg-base-100 w-auto shadow lg:mr-1">
                 <div class="">
-                  <img src="./assets/residential.png" alt="" class="">
+                  <img src="./assets/residential.png" alt="" class="ml-4">
                 </div>
                 <div class="card-body">
                   <h3 class="card-title">Residential</h3>
@@ -168,98 +174,93 @@
               </div>
               </div>
             </div>
-            <div class="w-5/12">
+            <div class="lg:w-5/12">
               <img src="./assets/Rectangle.png" class="w-full h-auto max-w-full rounded-lg shadow-2xl" />
             </div>
           </div>
         </div>
       </section>
-      <section class="w-[85%] mx-auto">
+      <!-- section 2 card section -->
+<section class="w-[85%] mx-auto">
         <!-- section 2 content -->
-        <div class="flex flex-col items-center ">
+  <div>
+  <div class="flex flex-col items-center ">
           
-          <div>
-            <button class="btn rounded-full bg-white my-5 block sm:inline-block">
-              <i class="fa-solid fa-arrow-right rounded-full text-black p-1"></i>
-              About Us
-            </button>
-          </div>
-          <h2 class="text-5xl font-bold">
-            We design thoughtful, liveable spaces
-          </h2>
-          <p class="py-2">
-            The barn house captivates with its blend of rustic charm and <br>
-            modern sophistication, featuring weathered wood, sleek metal accents.
-          </p>
-
-        </div>
-        <div>
-          <!-- cards div -->
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
-            <!-- card1 -->
-    <div class="card bg-base-200 shadow-xl">
-    <figure>
-      <img
-        src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-        alt="Shoes" />
-    </figure>
-    <div class="card-body">
-      <h2 class="card-title">Shoes!</h2>
-      <p>If a dog chews shoes whose shoes does he choose?</p>
-      <div class="card-actions justify-end">
-        <button class="btn btn-primary">Buy Now</button>
-      </div>
+    <div>
+      <button class="btn rounded-full bg-white my-5 block sm:inline-block">
+        <i class="fa-solid fa-arrow-right rounded-full text-black p-1"></i>
+        About Us
+      </button>
     </div>
+    <h2 class="text-5xl font-bold text-center mb-5">
+      Our Works Process
+    </h2>
+    <p class="py-2 text-center lg:max-w-[55%] mb-5">
+      The barn house captivates with its blend of rustic charm and
+      modern sophistication, featuring weathered wood, sleek metal accents.
+    </p>
+
+  </div>
+
+          <!-- cards div -->
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+            <!-- card1 -->
+  <div class="">
+              <div class="card bg-card1 shadow flex justify-start items-start p-6 pl-[1.375rem]">
+                <img
+                  src="./assets/concept.png"
+                  alt="Shoes" class="w-[17%] mb-2"/>
+          
+              <div class="">
+                <h2 class="text-xl font-bold pl-2">Concept</h2>
+                <p class="mt-2 pl-2">The barn house captivates with its blend of rustic charm and modern.</p>
+              </div>
+            </div>
   </div>
   <!-- card 2 -->
-  <div class="card bg-base-100  shadow-xl">
-    <figure>
+  <div>
+    <div class="card bg-card2 shadow flex justify-start items-start p-6 pl-[1.375rem]">
       <img
-        src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-        alt="Shoes" />
-    </figure>
-    <div class="card-body">
-      <h2 class="card-title">Shoes!</h2>
-      <p>If a dog chews shoes whose shoes does he choose?</p>
-      <div class="card-actions justify-end">
-        <button class="btn btn-primary">Buy Now</button>
-      </div>
+        src="./assets/flow-chart.png"
+        alt="Shoes" class="w-[17%] mb-2"/>
+
+    <div class="">
+      <h2 class="text-xl font-bold ">Design Process</h2>
+      <p class="mt-2 ">The barn house captivates with its blend of rustic charm and modern.</p>
     </div>
+  </div>
   </div>
   <!-- card3 -->
-  <div class="card bg-base-100 shadow-xl">
-    <figure>
+  <div>
+    <div class="card bg-card3 shadow flex justify-start items-start p-6 pl-[1.375rem]">
       <img
-        src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-        alt="Shoes" />
-    </figure>
-    <div class="card-body">
-      <h2 class="card-title">Shoes!</h2>
-      <p>If a dog chews shoes whose shoes does he choose?</p>
-      <div class="card-actions justify-end">
-        <button class="btn btn-primary">Buy Now</button>
-      </div>
+        src="./assets/vision.png"
+        alt="Shoes" class="w-[17%] mb-2"/>
+
+    <div class="">
+      <h2 class="text-xl font-bold">Supervision</h2>
+      <p class="mt-2 text-justify text-base">The barn house captivates with its blend of rustic charm and modern.</p>
     </div>
+  </div>
   </div>
   <!-- card4 -->
-  <div class="card bg-base-100 shadow-xl">
-    <figure>
+  <div>
+    <div class="card bg-card4 shadow flex justify-start items-start p-6 pl-[1.375rem]">
       <img
-        src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-        alt="Shoes" />
-    </figure>
-    <div class="card-body">
-      <h2 class="card-title">Shoes!</h2>
-      <p>If a dog chews shoes whose shoes does he choose?</p>
-      <div class="card-actions justify-end">
-        <button class="btn btn-primary">Buy Now</button>
-      </div>
+        src="./assets/budget-planning.png"
+        alt="Shoes" class="w-[17%] mb-2"/>
+
+    <div class="">
+      <h2 class="text-xl font-bold ">Budget Planning</h2>
+      <p class="mt-2">The barn house captivates with its blend of rustic charm and modern.</p>
     </div>
   </div>
-    </div>
-        </div>
+  </div></div></div>
+</section>
+<!-- section3 -->
+<section class="">
 
-      </section>
+</section>
       <!-- footer -->
       <footer class="footer footer-center bg-primary text-primary-content p-10">
         <aside>
